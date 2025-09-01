@@ -47,7 +47,7 @@ short int wifi_feedback(char sub[],uint16_t timeout)
 int wifi_init(void)
 {
 	enum wifi_cmd{AT,AT_RST,AT_CWMODE,AT_CWJAP,AT_CIFSR,AT_CIPMUX,AT_CIPMODE};
-	const char *const wifi_cmds[]={"AT\r\n","AT+RST\r\n","AT+CWMODE=3\r\n","AT+CWJAP=\"MASTERPIECE\",\"24681012\"\r\n",
+	const char *const wifi_cmds[]={"AT\r\n","AT+RST\r\n","AT+CWMODE=3\r\n","AT+CWJAP=\"No Devices Found...\",\"24681012\"\r\n",
 						"AT+CIFSR\r\n","AT+CIPMUX=0\r\n","AT+CIPMODE=0\r\n"};
 	int test=1;
 	int count=1;
