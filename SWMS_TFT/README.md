@@ -23,10 +23,10 @@ A weather‐monitoring project built on an STM32F401RBT6 (RaayanMini). It reads 
    - Because it’s non-blocking, the display never stalls when the WiFi task is busy.
 
 3. **Data Transmission (FreeRTOS Task)**  
-   - Every five seconds, a high-priority task formats an HTTP request and sends it via UART to the ESP8266, which forwards the data to a remote server (for example, a simple REST API).
+   - Every five seconds, a high-priority task formats an HTTP request and sends it via UART to the ESP8266, which forwards the data to a remote server.
 
 4. **RTOS Coordination**  
-   - CMSIS-FreeRTOS schedules these three tasks (sensor, display, WiFi) so they run as if parallel—no more blocking `HAL_Delay()` calls. Tasks communicate via queues or semaphores where needed.  
+   - CMSIS-FreeRTOS schedules these three tasks (sensor, display, WiFi) so they run as if parallel—no more blocking `HAL_Delay()` calls. Tasks communicate via semaphores where needed.  
 
 ## ⚙️ Features & Highlights
 
