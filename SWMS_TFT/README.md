@@ -16,7 +16,7 @@ A weather‐monitoring project built on an STM32F401RBT6 (RaayanMini). It reads 
 ## 🔧 How It Works
 
 1. **Sensor Reading (FreeRTOS Task)**  
-   - A low-priority task wakes every second to read temperature and humidity from the DHT11.
+   - A low-priority task wakes every 5 second to read temperature and humidity from the DHT11.
 
 2. **Display Update (FreeRTOS Task)**  
    - A medium-priority task uses SPI to draw the latest readings on the ST7735 TFT.  
