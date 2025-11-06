@@ -204,7 +204,7 @@ int wifi_transmit(uint8_t *dht_buffer)
 	HAL_UART_Transmit(&huart6,(uint8_t *)"AT+CIPSTART=\"TCP\",\"142.93.218.33\",80\r\n",sizeof("AT+CIPSTART=\"TCP\",\"142.93.218.33\",80\r\n"),100);
 	osDelay(50);
 
-	snprintf(Fetch,50,"GET /page.php?temp=%02d.%1d&hum=%02d.%1d&dev=2\r\n\r\n",dht_buffer[2],dht_buffer[3],dht_buffer[0],dht_buffer[1]); //ESP8266_SendTcp // @suppress("Float formatting support")
+	snprintf(Fetch,50,"GET /page.php?temp=%02d.%1d&hum=%02d.%1d&dev=08\r\n\r\n",dht_buffer[2],dht_buffer[3],dht_buffer[0],dht_buffer[1]); //ESP8266_SendTcp // @suppress("Float formatting support")
 	HAL_UART_Transmit(&huart6,(uint8_t *)"AT+CIPSEND=50\r\n",sizeof("AT+CIPSEND=50\r\n"),100);
 	osDelay(50);
 
