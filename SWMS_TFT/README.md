@@ -53,4 +53,9 @@ A weather‐monitoring project built on an STM32F401RBT6 (RaayanMini). It reads 
 - **User Experience**  
   Real-time weather data on a vibrant TFT + online updates is rewarding—especially as a first project under my belt.
 
+## 📸 Demo
+
+[![Watch the Demo Video](https://img.youtube.com/vi/wjii8i1-mzw/maxresdefault.jpg)](https://www.youtube.com/watch?v=wjii8i1-mzw)
+
+> 🎥 Click the image to watch the Smart Weather Monitor System in action!
 
